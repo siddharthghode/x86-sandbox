@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 text-sm;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-3 py-1 border border-gray-300 rounded text-xs font-medium cursor-pointer
+           bg-white hover:bg-gray-50 transition-colors whitespace-nowrap;
+  }
+  .btn-primary {
+    @apply btn bg-blue text-white border-blue hover:opacity-90;
+  }
+  .badge {
+    @apply px-1.5 py-0.5 rounded text-xs font-medium inline-block;
+  }
+  .badge-blue  { @apply bg-blue-bg text-blue-text; }
+  .badge-green { @apply bg-green-bg text-green-text; }
+  .badge-amber { @apply bg-amber-bg text-amber-text; }
+  .badge-red   { @apply bg-red-bg text-red-text; }
+  .badge-purple{ @apply bg-purple-bg text-purple-text; }
+  .badge-gray  { @apply bg-gray-100 text-gray-500; }
+  .pane-header {
+    @apply px-3 py-1.5 border-b border-gray-200 text-xs font-medium text-gray-500
+           flex justify-between items-center bg-gray-50 gap-2 flex-wrap;
+  }
+  .mono { font-family: ui-monospace, monospace; }
+}
